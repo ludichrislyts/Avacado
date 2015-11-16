@@ -1,0 +1,64 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+@import "../images/main.jpg";
+@import url(https://fonts.googleapis.com/css?family=Sacramento&subset=latin,latin-ext);
+/* SMACSS theme rules */
+/* @import "theme-A.css"; */
+/* @import "theme-B.css"; */
+body{
+    font-size: 10px;
+    background-image: url(../images/main.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+#main-image{
+
+}
+#page-title{
+    font-family: Sacramento, Georgia, sans-serif;
+    font-size: 3em;
+}
+.node-title a{
+    font-family: Sacramento, Georgia, sans-serif;
+    font-size: 3em;
+    text-decoration: none;
+    color: inherit;
+}
+a.header__site-link:hover{
+    text-decoration: none;
+}
+a.header__site-link span{
+    font-family: Georgia;
+}
+ul.menu a{
+    text-decoration: none;
+    font-size: 2em;
+    color: inherit;
+}
+ul.menu li{
+    list-style: none;
+}
+ul.links a{
+    display: none;
+}
+div#content a.feed-icon{
+    display: none;
+}
